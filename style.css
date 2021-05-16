@@ -1,0 +1,2563 @@
+@charset "utf-8";
+
+
+/* リセットCSS */
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* リセットCSSここまで */
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-size: 14px;
+  color: #333333;
+  line-height: 1;
+  font-family: "�q���M�m�p�S Pro W3", "Hiragino Kaku Gothic Pro", "���C���I", Meiryo, Osaka, "�l�r �o�S�V�b�N", "MS PGothic", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  display: block;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 3%;
+  text-align: center;
+}
+
+/* ヘッダー */
+header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 10;
+}
+
+
+
+header .wrapper {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+header h1{
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  margin: 10px;
+}
+
+header h1 p {
+  font-size: 0.6rem;
+}
+
+header h1 img {
+  width: 90px;
+}
+
+header .data {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #da6b64;
+  color: #fff;
+  text-align: center;
+  padding: 10px 12px;
+}
+
+header .data img {
+  width: 20px;
+}
+
+header .data p {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+header .data p span {
+  display: none;
+}
+
+/* メイン */
+main {
+  margin-top: 60px;
+}
+
+/* メイン画像 */
+.main-visual {
+  width: 100%;
+  background-image: url(images/mainsp.jpg);
+  height: 312px;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+
+.main-title {
+  text-align: center;
+  vertical-align: center;
+  margin-top: 20px;
+}
+
+.main-title h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.main-title img {
+  background-image: url();
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+.main-title p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+/* コンタクト */
+#contact {
+  background-color: #ebb94d;
+  height: auto;
+  margin: 0 auto;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+#contact h3 {
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-weight: 600;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  padding: 2px 4px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.sp_br {
+  display: block;
+}
+
+a.contact {
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: #da6b64;
+  padding: 10px 40px;
+  line-height: 1.4;
+  border-radius: 50px;
+  margin: 20px 0;
+  width: 80%;
+}
+
+a.contact:hover {
+  background-color: #d84940;
+}
+
+#contact .sns {
+  margin-bottom: 20px;
+}
+
+#contact ul li {
+  margin: 20px 0;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.sns a.sns-btn {
+  display: inline-block;
+  background-color: #1B77F2;
+  font-size: 0.8rem;
+  padding: 4px 5px;
+  border-radius: 3px;
+  margin: 0 5px;
+}
+
+.sns a.sns-btn i {
+  padding-right: 3px;
+}
+
+.sns a.twitter {
+  background-color: #1E95E0;
+}
+
+/* イントロダクション */
+#introduction {
+  background-image: url(images/introbottom.jpg);
+  background-repeat: no-repeat;
+  height: inherit;
+  background-position: center bottom;
+  background-size: contain;
+  text-align: center;
+  padding: 30px 20px 50px;
+}
+
+.intro-title {
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 2;
+  padding: 25px 0;
+  margin-bottom: 40px;
+}
+
+.intro-title::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #ebb94d;
+  border-left: 4px solid #ebb94d;
+  content: "";
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.intro-title::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 4px solid #ebb94d;
+  border-right: 4px solid #ebb94d;
+  content: "";
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+
+.intro-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.intro-text p span {
+  display: inline-block;
+  border-bottom: 5px solid #ebb94d;
+  line-height: 1;
+  font-weight: 600;
+}
+
+/* アバウト */
+#about {
+  background-color: #fef5e0;
+  text-align: center;
+  position: relative;
+  padding: 0 20px 60px 20px;
+}
+
+.circle1 {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  background-color: #ebb94d;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.about-icon {
+  position: relative;
+  top: -30px;
+}
+
+.about-title {
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 2;
+  padding: 25px 0;
+  margin-bottom: 40px;
+}
+
+.about-title::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #ebb94d;
+  border-left: 4px solid #ebb94d;
+  content: "";
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.about-title::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 4px solid #ebb94d;
+  border-right: 4px solid #ebb94d;
+  content: "";
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+#about p.disc {
+  font-size: 1.1rem;
+  font-weight: 550;
+  letter-spacing: 2px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.about-box {
+  width: 1170px;
+  background-color: #fff;
+  border: 2px solid #ebb94d;
+  border-radius: 5px;
+  padding: 15px;
+  max-width: calc(100% - 40px);
+  margin: 30px auto;
+}
+
+.about-box h3 {
+  letter-spacing: 2px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.box {
+  display: inline-block;
+  padding: 5px;
+  letter-spacing: 2px;
+  line-height: 1.6;
+  font-size: 0.6rem;
+  margin-bottom: 10px;
+}
+
+.box img {
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+/* ステップ */
+#step {
+  background-image: url(images/aboutsecondbgsp.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.step-title {
+  color: #fff;
+}
+
+.step-title h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  margin-bottom: 25px;
+}
+
+.step-title p {
+  font-size:1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.step-title p span {
+  color: #ebb94d;
+}
+
+.steps {
+  margin: 30px auto;
+}
+
+.step {
+  width: 100%;
+  margin: 0 auto 15px;
+  padding: 15px 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.steps .step .title {
+  background-color: #ebb94d;
+  border-radius: 5px;
+  line-height: 1.4;
+  font-size: 12px;
+  color: #fff;
+  padding: 2px;
+  margin: 0 0 15px;
+}
+
+.steps .step p {
+  line-height: 1.8;
+  letter-spacing: 2px;
+}
+
+/* インポータント */
+#important {
+  background-color: #016ea9;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  line-height: 1.4;
+  font-size: 1rem;
+}
+
+#important p span {
+  color: #ebb94d;
+}
+
+/* コンテンツ（内容） */
+#contents {
+  padding: 20px;
+  text-align: center;
+}
+
+#contents h2.contents-title{
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  margin: 30px 0 50px 0;
+}
+
+#contents p {
+  letter-spacing: 2px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contents {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.content img {
+  width: 90%;
+}
+
+.content img:last-child {
+  margin-right: 0;
+}
+
+p.bottom-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* メリット */
+#merit {
+  background-color: #fef5e0;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.merit-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 2;
+  padding: 25px 0;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.merit-title span {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.merit-title::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #ebb94d;
+  border-left: 4px solid #ebb94d;
+  content: "";
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.merit-title::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 4px solid #ebb94d;
+  border-right: 4px solid #ebb94d;
+  content: "";
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.merit {
+  margin-bottom: 20px;
+}
+
+.merit .image {
+  background-position: center;
+  background-size: cover;
+  height: 120px;
+  margin-bottom: 15px;
+}
+
+.merit .one {
+  background-image: url(images/learnfromfreelancer.jpg);
+}
+
+.merit .two {
+  background-image: url(images/learnfromprojects.jpg);
+}
+
+.merit .three {
+  background-image: url(images/actuallyfree.jpg);
+}
+
+.merit h3 {
+  font-size: 1.1rem;
+  color: #ebb94d;
+  margin-bottom: 10px;
+}
+
+.merit p {
+  padding: 0 10px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.support-box {
+  background-color: #fff;
+  border: 2px solid #ebb94d;
+  border-radius: 5px;
+  padding: 20px 10px 10px;
+  margin-bottom: 20px;
+}
+
+.support-box h4 {
+  font-size: 1.2rem;
+  color: #ebb94d;
+  margin-bottom: 20px;
+}
+
+.support-box p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.support-box p.attention {
+  font-size: 0.7rem;
+}
+
+.lg_br {
+  display: none;
+}
+
+p.alert {
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+/* メンバー */
+#member {
+  background-image: url(images/teacherbgsp.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 70px 10px 20px 10px;
+  text-align: center;
+}
+
+#member h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+#member h2 i {
+  padding-right: 2px;
+}
+
+#member > p {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+
+.member img {
+  border-radius: 50%;
+  width: 120px;
+  display: inline-block;
+  position: relative;
+  top: 35px;
+}
+
+.member-detail {
+  border: 3px solid #fff;
+  padding: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.member p {
+  line-height: 1.6;
+}
+
+.member p.position {
+  margin: 30px 0 15px 0;
+}
+
+.member p.name {
+  margin-bottom: 15px;
+}
+
+.member p.disc1 {
+  text-align: left;
+}
+
+.member p.disc2 {
+  text-align: left;
+  margin-top: 15px;
+}
+
+/* Q&A1 */
+#question1 {
+  text-align: center;
+  padding: 0;
+}
+
+#question1 .question {
+  background-color: #ebb94d;
+  position: relative;
+  padding: 20px 10px 10px;
+  margin-bottom: 30px;
+}
+
+#question1 .question::after {
+  content: " ";
+  height: 0;
+  position: absolute;
+  width: 0;
+  border: 15px solid transparent;
+  border-top-color: #ebb94d;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+}
+
+#question1 .circle2 {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  background-color: #fff;
+  color: #ebb94d;
+  border-radius: 50%;
+  text-align: center;
+}
+
+#question1 .question-title {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 3;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+
+#question1 .question-title::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+  content: "";
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+#question1 .question-title::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+  content: "";
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+#question1 .answer {
+  padding: 20px 3%;
+}
+
+#question1 .answer h2 {
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+#question1 .answer p.evidence {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#question1 .answer p {
+  margin-bottom: 30px;
+}
+
+#question1 ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+#question1 ul li img {
+  display: block;
+  width: 30%;
+  height: 80%;
+  border: 3px solid #ebb94d;
+  margin-right: 10px;
+}
+
+#question1 ul li p {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #777;
+  line-height: 1.4;
+  text-align: left;
+}
+
+#question1 ul li p span {
+  display: block;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+/* スタディ */
+#study {
+  background-image: url(images/classbgsp.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 70px 10px 20px 10px;
+  text-align: center;
+}
+
+.study-title h2{
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+
+.study-title p {
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+.pre-study {
+  background-color: #016ea9;
+  border-radius: 5px;
+  padding-bottom: 1px;
+  margin-bottom: 20px;
+}
+
+.pre-study p.title {
+  line-height: 60px;
+}
+
+.pre-study ul {
+  background-color: #fff;
+  color: black;
+  margin: 3px;
+  border-radius: 0 0 5px 5px;
+}
+
+.pre-study ul li {
+  border-bottom: 1px dotted #e5e5e5;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 15px;
+}
+
+.traveling-study {
+  background-color: #016ea9;
+  border-radius: 5px;
+  padding-bottom: 1px;
+  margin-bottom: 20px;
+}
+
+.traveling-study p.title {
+  line-height: 60px;
+}
+
+.traveling-study ul {
+  background-color: #fff;
+  color: black;
+  margin: 3px;
+  border-radius: 0 0 5px 5px;
+}
+
+.traveling-study ul li {
+  border-bottom: 1px dotted #e5e5e5;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 15px;
+}
+
+/* サポート */
+#support {
+  background-color: #016ea9;
+  text-align: center;
+  color:#fff;
+  padding: 25px 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+
+/* プロセス */
+#process {
+  text-align: center;
+  padding: 30px 10px;
+}
+
+#process h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.process-image img {
+  display: none;
+}
+
+.process {
+  background-color: #fef5e0;
+  margin-bottom: 5px;
+  padding: 10px 15px;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.flow-line {
+  display: none;
+}
+
+.process h3 {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  justify-content: center;
+}
+
+.process h3 span {
+  color: #333333;
+  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.process h3 span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.process h3 img {
+  width: 35px;
+  margin-right: 15px;
+}
+
+.process h3 span p i {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.process-detail {
+  margin-top: 10px;
+  display: none;
+}
+
+.process-detail p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+.skypeconsulting p.deep {
+  font-weight: 600;
+  line-height: 3;
+}
+
+.preworks p.deep1 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.preworks p.deep2 {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.flight p.deep {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.personwithlight p.deep {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.jobsupport p.deep {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* 拠点 */
+#base {
+  background-image: url(images/bangkokbgsp.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 50px 35px 20px;
+  text-align: left;
+}
+
+#base h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+#base p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#base ul {
+  margin-bottom: 20px;
+}
+
+#base ul li {
+  margin-bottom: 15px;
+}
+
+#base p.bottom-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+/* 特典 */
+#benefit {
+  background-color: #f7c23c;
+  text-align: center;
+  padding: 30px 20px 20px;
+}
+
+#benefit h2 {
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+#benefit > p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+#benefit > p span {
+  color: #fff;
+}
+
+.more-title {
+  position: relative;
+  background-color: #f7c23c;
+  margin: 0 auto;
+  bottom: -28px;
+  width: 250px;
+}
+
+.more h3 {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+
+
+.more ul.specialbox-pc {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 50px 20px 20px;
+  display: none;
+}
+
+.more li.specialbox-pc {
+  background-color: #fff;
+  border-radius: 100%;
+  color: #333;
+  display: table-cell;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+
+#benefit .more li.specialbox-pc p.circle2-pc {
+  color: #f7c23c;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.4;
+  padding-top: 50px;
+}
+
+#benefit .more li.specialbox-pc p.text {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 20px;
+  line-height: 1.4;
+}
+
+.more ul.special-box {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 50px 20px 20px;
+}
+
+.more ul.special-box li{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.more ul li p.circle2 {
+  margin-right: 30px;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  background-color: #fff;
+  color: #ebb94d;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.more ul li p.text-right {
+  width: 70%;
+  text-align: left;
+  line-height: 1.4;
+}
+
+/* 価値 */
+#value {
+  background-image: url(images/specialdetailsp.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+#value h2 {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+#value P {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.value-title {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 2;
+  padding: 20px 0;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+
+.value-title::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+  content: "";
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.value-title::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+  content: "";
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+/* メッセージ */
+#message {
+  padding: 50px 20px 30px;
+  text-align: center;
+}
+
+#message h2 {
+  font-size: 1.4rem;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+#message h3 {
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+#message img{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.bottom-text {
+  text-align: left;
+}
+
+.bottom-text p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.bottom-text p.two {
+  margin-bottom: 30px;
+}
+
+.bottom-text p.three{
+  margin-bottom: 30px;
+}
+
+/* フォーム */
+#form {
+  background-color: #ebb94d;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#form h2 {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+
+#form p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+input,
+textarea {
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: normal;
+  padding: 10px;
+}
+
+input,
+textarea:hover {
+  cursor: pointer;
+}
+
+input {
+  padding: 20px;
+}
+
+textarea {
+  height: 80px;
+}
+
+input.button {
+  background-color: #da6b64;
+  color:#fff;
+  border-radius: 50px;
+}
+
+.button {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 質問2 */
+#question2 {
+  padding: 30px 15px;
+  text-align: center;
+}
+
+#question2 h2 {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+#question2 .question {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+#question2 .question h3 {
+  color: #333;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px #e5e5e5;
+  padding: 8px;
+  text-align: left;
+  position: relative;
+}
+
+#question2 .question h3 span {
+  display: block;
+  color: #333;
+  line-height: 1.2;
+  font-size: 1.1rem;
+}
+
+#question2 .question h3 span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#question2 .question h3 span i.far {
+  color: #016ea9;
+  font-size: 0.9rem;
+}
+
+#question2 .question h3 span i.fas {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #e5e5e5;
+  font-weight: 900;
+}
+
+#question2 .question .answer-text  {
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  padding: 0 15px;
+  text-align: left;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 30px 15px;
+  display: none;
+}
+
+/* フッター */
+footer {
+  background-color: #ececec;
+  text-align: center;
+  padding: 20px 10px 5px;
+  font-size: 0.7rem;
+  line-height: 1.6;
+  letter-spacing: 2px;
+}
+
+.footer-text {
+  margin-bottom: 5px;
+}
+
+.sns {
+  margin-bottom: 40px;
+}
+
+.sns a {
+  display: block;
+  color: #fff;
+  line-height: 1;
+}
+
+footer a {
+  color: #337ab7;
+}
+
+#top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+#top-btn a {
+  background-color: #ececec;
+  padding: 20px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.top-btn a:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  
+  /* ヘッダー */
+  header .wrapper {
+    max-width: 1165px;
+  }
+
+  header {
+    height: 80px;
+    line-height: 80px;
+  }
+
+  header h1 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+  header h1 img {
+    width: 130px;
+    float: left;
+    margin: 10px 5px;
+  }
+
+  header h1 p {
+    padding-bottom: 5px;
+    font-size: 0.9rem;
+  }
+
+  header .data {
+    background-color: #da6b64;
+    color: #fff;
+    text-align: center;
+    padding: 15px 40px;
+    border-radius: 50px;
+    margin: 20px 3%;
+  }
+
+  header .data img {
+    display: none;
+  }
+  
+  header .data p {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    line-height: 1.2;
+  }
+  
+  header .data p span {
+    display: inline-block;
+  }
+
+  /* メイン画像 */
+  .main-visual {
+    background-image: url(images/main.jpg);
+    height: 500px;
+  }
+
+  .main-title {
+    text-align: center;
+    vertical-align: center;
+    margin-top: 120px;
+  }
+  
+  .main-title h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin-bottom: 15px;
+  }
+  
+  .main-title img {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  
+  .main-title p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.2;
+  }
+
+  .sp_br {
+    display: none;
+  }
+
+  #contact {
+    padding: 30px 15px;
+  }
+
+  a.contact {
+    padding: 25px;
+  }
+  
+  #contact ul li {
+    font-size: 1.3rem;
+  }
+
+  /* イントロダクション */
+  #introduction {
+    background-image: url(images/introbottom.jpg);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 0;
+  }
+
+  .intro-title {
+    width: 860px;
+    padding: 30px 0;
+    margin: 0 auto;
+    max-width: calc(100% - 40px);
+  }
+
+  .intro-title h2 {
+    font-size: 1.7rem;
+  }
+
+  .intro-title::before {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .intro-title::after {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .intro-text {
+    padding-top: 35px;
+  }
+ 
+  .intro-text p {
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  .intro-text p.second {
+    margin-bottom: 0;
+  }
+
+/* アバウト */
+.circle1 {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 14px;
+}
+
+.about-title {
+  margin: 0 auto;
+  width: 860px;
+  font-size: 1.6rem;
+  padding: 30px 20px;
+  max-width: calc(100% - 40px);
+}
+
+.about-title::before {
+  width: 50px;
+  height: 50px;
+}
+
+.about-title::after {
+  width: 50px;
+  height: 50px;
+}
+
+#about p.disc {
+  font-size: 1.2rem;
+  font-weight: 550;
+  letter-spacing: 2px;
+  line-height: 1.6;
+  margin: 30px 0;
+}
+
+.box {
+  padding: 10px;
+}
+
+.about-box h3 {
+  letter-spacing: 2px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.box p {
+  margin-top: 10px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.box img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* ステップ */
+#step {
+  background-image: url(images/aboutsecondbg.jpg);
+  padding: 60px;
+}
+
+.step {
+  width: 40%;
+  margin: 0 30% 20px;
+  padding: 30px 30px 20px;
+  line-height: 2;
+}
+
+#step h2 {
+  font-size: 1.7rem;
+}
+
+.step p.textup {
+  margin: 30px 0 15px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+/* インポータント */
+#important {
+  padding: 40px;
+}
+
+#important p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 2px;
+}
+
+/* コンテンツ */
+#contents h2.contents-title {
+  font-size: 1.6rem;
+}
+
+#contents h2 span {
+  font-size: 0.9rem;
+}
+
+#contents p {
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+#contents p.bottom-text {
+  font-size: 1rem;
+  margin-top: 60px;
+}
+
+/* メリット */
+.merit-title {
+  margin: 0 auto;
+  width: 860px;
+  font-size: 1.6rem;
+  padding: 30px 20px;
+  max-width: calc(100% - 100px);
+  margin-bottom: 50px;
+}
+
+.merit-title::before {
+  width: 50px;
+  height: 50px;
+}
+
+.merit-title::after {
+  width: 50px;
+  height: 50px;
+}
+
+.merit .image {
+  width: 300px;
+  height: 180px;
+  margin: 0 auto 20px;
+}
+
+.merit p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.support-box {
+  margin: 50px;
+  padding: 45px 30px;
+}
+
+.support-box h4 {
+  font-size: 1.8rem;
+}
+
+.support-box p {
+  letter-spacing: 2px;
+}
+
+.support-box p.attention {
+  font-size: 1rem;
+}
+
+.lg_br {
+  display: block;
+}
+
+p.alert {
+  margin: 0 40px;
+  font-size: 0.9rem;
+}
+
+/* メンバー */
+#member {
+  background-image: url(images/teacherbg.jpg);
+  padding: 60px;
+}
+
+#member h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+#member p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#member ul li .member-detail {
+  padding: 15px 40px 40px;
+}
+
+
+#member ul li img {
+  width: auto;
+  height: auto;
+  top: 40px;
+}
+
+#member ul li p {
+  font-weight: 500;
+}
+
+/* 質問１ */
+#question1 .question {
+  padding: 40px 0;
+}
+
+#question1 .question-title {
+  margin: 0 auto;
+  width: 860px;
+  padding: 30px 20px;
+  max-width: calc(100% - 40px);
+  font-size: 1.3rem;
+  line-height: 2;
+  padding: 20px 0;
+}
+
+#question1 .question-title::before {
+  width: 50px;
+  height: 50px;
+}
+
+#question1 .question-title::after {
+  width: 50px;
+  height: 50px;
+}
+
+#question1 .question::after {
+  border: 25px solid transparent;
+  border-top-color: #ebb94d;
+}
+
+#question1 .answer {
+  padding: 30px;
+}
+
+#question1 .answer h2 {
+  font-size: 1.7rem;
+}
+
+#question1 .answer p.evidence {
+  font-size: 1rem;
+}
+
+#question1 .answer ul {
+  margin-top: 40px;
+}
+
+#question1 .message {
+  width: 100%;
+}
+
+#question1 .message img {
+  display: block;
+  width: 30%;
+}
+
+#question1 .message p {
+  font-size: 1.4rem;
+  padding: 10px;
+}
+
+/* スタディ */
+#study {
+  background-image: url(images/classbg.jpg);
+  padding: 70px 10% 50px;
+}
+
+.study-title {
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+}
+
+#study h2 {
+  font-size: 1.8rem;
+}
+
+.study-title p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.container ul li {
+  font-size: 1rem;
+}
+
+/* サポート */
+#support {
+  padding: 40px;
+}
+
+#support p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 2px;
+}
+
+/* プロセス */
+#process {
+  padding: 40px;
+}
+
+#process h2 {
+  font-size: 1.6rem;
+  margin-bottom: 50px;
+}
+
+#process .process-image img{
+  margin: 0 auto 30px;
+
+}
+
+.processes {
+  padding: 0 20px;
+}
+
+.process-image img {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.process-detail {
+  margin-top: 10px;
+  display: block;
+}
+
+#process .process {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 0;
+}
+
+
+.flow-line {
+  display: block;
+  width: 60%;
+  margin: 0 auto -2px;
+}
+
+#process .process h3 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+  text-align: center;
+  align-items: center;
+  padding-left: 20px;
+}
+
+#process .process h3 img {
+  display: block;
+}
+
+#process .process h3 span {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#process .process h3 span p i {
+  display: none;
+}
+
+#process .process h3 span img {
+  width: 100px;
+  margin: 20px 0;
+}
+
+#process .process .process-detail {
+  width: 80%;
+  padding: 20px;
+}
+
+#process .process .process-detail p.deep {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#process .process .process-detail p.deep span {
+  display: block;
+  margin-top: 20px;
+}
+
+/* 拠点 */
+#base {
+  background-image: url(images/bangkokbg.jpg);
+  text-align: left;
+  padding: 60px;
+}
+
+#base h2 {
+  text-align: left;
+}
+
+/* 特典 */
+#benefit {
+  padding: 50px 45px;
+}
+
+#benefit h2 {
+  font-size: 1.7rem;
+  margin-bottom: 50px;
+}
+
+#benefit p {
+  font-size: 1rem;
+}
+
+#benefit .more-title {
+  width: 400px;
+}
+
+#benefit .more-title h3 {
+  font-size: 1.8rem;
+}
+
+.more ul.specialbox-pc {
+  display: block;
+  display: flex;
+  flex-direction: column;
+}
+
+.more ul.special-box {
+  display: none;
+}
+
+/* 価値 */
+#value {
+  background-image: url(images/specialdetail.jpg);
+  padding: 60px;
+}
+
+#value h2 {
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+}
+
+.value-title {
+  max-width: 900px;
+  font-size: 1.6rem;
+  margin: 0 auto 20px;
+}
+
+.value-title::before {
+  width: 50px;
+  height: 50px;
+}
+
+.value-title::after {
+  width: 50px;
+  height: 50px;
+}
+
+#value p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* メッセージ */
+#message {
+  padding: 70px 25px;
+}
+#message h2 {
+  font-size: 1.8rem;
+}
+
+#message h3 {
+  font-size: 1.2rem;
+  margin-bottom: 60px;
+}
+
+#message img {
+  margin-bottom: 40px;
+}
+
+/* フォーム */
+#form {
+  padding: 60px 15%;
+}
+
+#form h2 {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+#form p {
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.button {
+  font-size: 1.4rem;
+}
+
+/* 質問2 */
+#question2 {
+  padding: 40px 7%;
+}
+
+#question2 h2 {
+  font-size: 1.8rem;
+  margin-bottom: 50px;
+}
+
+#question2 .question h3 {
+  padding: 20px;
+}
+
+#question2 .question h3 a {
+  font-size: 1.2rem;
+}
+
+#question2 .question h3 a i {
+  font-size: 1.2rem;
+}
+
+/* フッター */
+footer {
+  padding: 30px;
+}
+
+}
+/* @media screen and (min-width: 768px) */
+
+
+@media screen and (min-width: 1200px) {
+
+/* コンタクト */
+#contact h3 {
+  font-size: 1.4rem;
+}
+
+#contact p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+#contact .contact {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  padding: 35px;
+}
+
+#contact ul li {
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+/* イントロ */
+#introduction h2 {
+  font-size: 2rem;
+}
+
+#introduction .intro-text p {
+  font-size: 1.4rem;
+}
+
+#about .about-title h2 {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+#about p.disc {
+  font-size: 1.4rem
+}
+
+.about-box {
+  padding-top: 30px;
+}
+
+.about-box h3 {
+  font-size: 1.4rem;
+}
+
+/* ステップ */
+#step {
+  padding: 50px 0 30px;
+}
+
+#step .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#step .row .step {
+  width: 30%;
+  margin: 0 10px;
+}
+
+#step h2 {
+  font-size: 2rem;
+}
+
+#step .step-title p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.steps .step p.title {
+  font-size: 1rem;
+}
+
+.steps .step .textup,
+.steps .step .textdown {
+  font-size: 1rem
+}
+
+/* インポータント */
+#important p {
+  font-size: 1.4rem;
+}
+
+/* コンテンツ */
+#contents h2.contents-title {
+  font-size: 2rem;
+}
+
+#contents p {
+  font-size: 1.4rem;
+}
+
+#contents p.bottom-text {
+  font-size: 1.2rem;
+}
+
+/* メリット */
+#merit {
+  padding: 40px 10%;
+}
+
+
+#merit .merit-title h2 {
+  font-size: 2rem;
+}
+
+#merit .merit-title h2 span {
+  font-size: 1.4rem;
+}
+
+.merits {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 3%;
+}
+
+.merits .merit {
+  width: 35%;
+  margin-right: 25px;
+}
+
+.merits .merit:last-child {
+  margin-right: 0;
+}
+
+.merit .image {
+  width: auto;
+}
+
+.merits .merit h3,
+.merits .merit p {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.merits .merit h3 {
+  font-size: 1.4rem;
+  margin: 10px 0;
+}
+
+.merits .merit p {
+  width: 100%;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.support-box h4 {
+  font-size: 2rem;
+}
+
+.support-box p {
+  font-size: 1.4rem;
+}
+
+.support-box p.attention {
+  font-size: 1.2rem;
+}
+
+p.alert {
+  font-size: 1rem;
+}
+
+
+/* メンバー */
+#member ul.members {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+#member ul.members li.member {
+  width: 33%;
+  margin: 0 10px;
+}
+
+#member ul.members li.member p.disc2 {
+  margin-bottom: 37px;
+}
+
+#member ul.members li.member p {
+  font-size: 1.2rem;
+}
+
+/* 質問1 */
+#question1 .question-title {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+#question1 .answer ul.message {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#question1 .answer .message img {
+  width: 30%;
+}
+
+/* スタディ */
+#study p {
+  font-size: 1.2rem;
+}
+
+#study .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#study .container .title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+#study .container ul li {
+  font-size: 1.1rem;
+}
+
+.pre-study {
+  width: 400px;
+  margin-right: 20px;
+}
+
+.traveling-study {
+  width: 400px;
+  height: 343px;
+}
+
+/* サポート */
+#support p {
+  font-size: 1.4rem;
+}
+
+/* プロセス */
+#process {
+  padding: 40px 60px;
+}
+
+#process .process-detail {
+  padding: 0;
+  margin: 0;
+}
+
+
+#process .process-image img{
+  margin: 0 auto 30px;
+}
+
+.process-detail p {
+  font-size: 1.1rem;
+}
+
+#process .process .process-detail p.deep {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+.process-detail p.deep span,
+.process-detail p.deep1,
+.process-detail p.deep2 {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin: 20px 0;
+}
+
+/* 拠点 */
+#base {
+  padding: 100px;
+  letter-spacing: 2px;
+}
+
+#base  h2{
+  font-size: 1.8rem;
+}
+
+#base p {
+  font-size: 1.1rem;
+}
+
+#base ul li {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#base p.bottom-text {
+  font-size: 1.4rem;
+}
+
+
+/* 特典 */
+#benefit {
+  padding: 30px 10%;
+}
+
+#benefit .more-title {
+  width: 500px;
+}
+
+#benefit .more-title h3 {
+  font-size: 2rem;
+}
+
+
+#benefit ul.specialbox-pc {
+  display: flex;
+  flex-direction: row;
+}
+
+#benefit ul.specialbox-pc li.specialbox-pc {
+  width: 250px;
+  height: 250px;
+}
+
+/* 価値 */
+#value h2 {
+  font-size: 2rem;
+}
+
+#value p {
+  font-size: 1.4rem;
+}
+
+#value .value-title {
+  font-size: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* メッセージ */
+#message h2 {
+  font-size: 2rem;
+}
+
+#message h3 {
+  font-size: 1.4rem;
+}
+
+#message .founder-message {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#message img {
+  width: 230px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.founder-message .bottom-text {
+  width: 60%;
+}
+
+/* フォーム */
+#form {
+  padding: 30px 20%;
+}
+
+.button {
+  font-size: 23px;
+}
+
+/* 質問2 */
+#question2 {
+  padding: 70px 12%;
+}
+
+#question2 .question h3 a {
+  font-size: 1.4rem;
+}
+
+}
